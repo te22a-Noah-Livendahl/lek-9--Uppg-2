@@ -1,0 +1,194 @@
+header{
+    text-align: center;
+}
+
+nav{
+    background-image: url(./snow_winter_trees.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+h1{
+    font-size: calc(1.5rem +3vw);
+}
+h2{
+    font-size: calc(1rem + 2vw);
+}
+p{
+    font-size: calc(0.5rem + 1vw);
+}
+
+nav{
+    text-align: center;
+}
+
+.bilder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+.bilder > img{
+    max-height: 30px;
+    border: 2px solid red;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+main{
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+article{
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+footer{
+    margin-top: 10px;
+    text-align: center;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+.länkar{
+    display: none;
+}
+
+.julgranen{
+    display: none;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    .gridLåda{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    header{
+        grid-column: 1/3;
+    }
+
+    nav{
+        grid-column: 1/3;
+    }
+
+    .bilder{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;        
+    }
+    
+
+    .länkar{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid red;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 10px;
+        grid-column: 1/2;
+        margin-right: 10px;
+        align-items: center;
+    }
+    .länkar > img{
+        max-height: 30px;
+        border: 2px solid red;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    main{
+        grid-column: 2/3;
+    }
+    
+    article{
+        border: none;
+    }
+
+    .julgranen{
+        display: none;
+    }
+
+    footer{
+        grid-column: 1/3;
+    }
+}
+
+@media screen and (min-width: 1008px) {
+    .gridLåda{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    header{
+        grid-column: 1/4;
+    }
+    
+    nav{
+        grid-column: 1/4
+    }
+
+    .länkar{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid red;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 10px;
+        grid-column: 1/2;
+        margin-right: 10px;
+        align-items: center;
+    }
+
+    .länkar > img{
+        max-height: 30px;
+        border: 2px solid red;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .bilder{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;        
+    }
+
+    .länkar{
+        grid-column: 1/2;
+    }
+
+    main{
+        grid-column: 2/3;
+        margin-right: 10px;
+    }
+
+    article{
+        border: none;
+    }
+
+    .bilder{
+        display: block;
+        grid-column: 3/4;
+        border: 2px solid red;
+        border-radius: 5px;
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    footer{
+        grid-column: 1/4;
+    }
+}
